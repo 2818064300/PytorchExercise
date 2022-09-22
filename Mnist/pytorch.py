@@ -1,6 +1,6 @@
 import time
 import torch
-import utils.Plot as plt
+import Utils.Plot as plt
 from MnistDataset import MnistDataset
 from Classifier import Classifier
 from LinearRegressionModel import LinearRegressionModel

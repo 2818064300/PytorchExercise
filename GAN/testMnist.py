@@ -3,7 +3,7 @@ import random
 import torch
 from MnistDiscriminator import Discriminator
 from MnistGenerator import Generator
-import utils.Plot as plt
+import Utils.Plot as plt
 import matplotlib.pyplot
 from Mnist.MnistDataset import MnistDataset
 

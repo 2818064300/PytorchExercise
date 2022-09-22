@@ -2,7 +2,7 @@ import torch
 import torchvision.datasets as datasets
 import torchvision.transforms as transforms
 import random
-import utils.Plot as plt
+import Utils.Plot as plt
 from CNNDiscriminator import Discriminator
 from CNNGenerator import Generator
 from Mnist.MnistDataset import MnistDataset
@@ -26,4 +26,5 @@ if __name__ == '__main__':
     #     D.train(image_data_tensor.reshape(1, 1, 28, 28), torch.FloatTensor([1.0]))
     #     D.train(G.forward(generate_random_seed(100)).detach(), torch.FloatTensor([0.0]))
     #     G.train(D, generate_random_seed(100), torch.FloatTensor([1.0]))
+    # 下载MNIST数据集
     datasets.MNIST(root='./data', train=True, transform=transforms.ToTensor, download=True)

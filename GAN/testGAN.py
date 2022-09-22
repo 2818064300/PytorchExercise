@@ -3,7 +3,7 @@ import numpy
 import random
 from Discriminator import Discriminator
 from Generator import Generator
-import utils.Plot as plt
+import Utils.Plot as plt
 
 
 # 生成真实数据源
