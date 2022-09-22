@@ -3,12 +3,16 @@
 ## 文件结构：
 
 ```
+  ├── CNN: 卷积神经网络
+   ├── dataset: 数据集
+    ├── flower_data: 分类模型
+   ├── model: 训练模型
   ├── GAN: 生成对抗网络
-	├── cnn: 卷积神经网络
-	├── dataset: 数据集
-	├── model: 训练模型
+   ├── cnn: 卷积神经网络
+   ├── dataset: 数据集
+   ├── model: 训练模型
   ├── Mnist: 手写数字练习
-  	├── model: 训练模型
+   ├── model: 训练模型
   ├── ObjectDetection: 目标检测练习
   ├── utils: 工具类
 ```
