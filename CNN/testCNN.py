@@ -1,15 +1,18 @@
+import os
 import torch
 import torchvision.datasets as datasets
 import torchvision.transforms as transforms
 from CNN import CNN
+
 
 def accuracy(predictions, labels):
     pred = torch.max(predictions.data, 1)[1]
     rights = pred.eq(labels.data.view_as(pred)).sum()
     return rights, len(labels)
 
+
 if __name__ == '__main__':
-    # 定义超参数
+    # 定义参数
     input_size = 28  # 图像的总尺寸28*28
     num_classes = 10  # 标签的种类数
     num_epochs = 3  # 训练的总循环周期
